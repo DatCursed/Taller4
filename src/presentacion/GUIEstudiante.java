@@ -1,4 +1,4 @@
-package GUI;
+package presentacion;
 
 import java.awt.GridLayout;
 
@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
-import Logica.Estudiante;
+import Dominio.Estudiante;
 
 public class GUIEstudiante extends JFrame {
 	private Estudiante estudiante;

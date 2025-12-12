@@ -1,4 +1,10 @@
-package GUI;
+/*
+David Rodríguez Sebastían Guevara
+21.806.579-1
+ICCI
+*/
+
+package presentacion;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -11,12 +17,12 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import Logica.Administrador;
-import Logica.Coordinador;
-import Logica.Estudiante;
-import Logica.Sistema;
-import Logica.Usuario;
-import Singleton.SistemaImpl;
+import Dominio.Administrador;
+import Dominio.Coordinador;
+import Dominio.Estudiante;
+import Dominio.Sistema;
+import Dominio.Usuario;
+import Logica.SistemaImpl;
 
 public class GUI extends JFrame {
 	private JTextField txtUsuario;

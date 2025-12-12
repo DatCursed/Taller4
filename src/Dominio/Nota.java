@@ -1,4 +1,4 @@
-package Logica;
+package Dominio;
 
 public class Nota {
 	private Curso curso;

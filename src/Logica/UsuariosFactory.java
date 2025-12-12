@@ -1,10 +1,10 @@
-package Factory;
+package Logica;
 
 
-import Logica.Administrador;
-import Logica.Coordinador;
-import Logica.Estudiante;
-import Logica.Usuario;
+import Dominio.Administrador;
+import Dominio.Coordinador;
+import Dominio.Estudiante;
+import Dominio.Usuario;
 
 public class UsuariosFactory {
 	public Usuario buildUsuarios(String[] parts) {

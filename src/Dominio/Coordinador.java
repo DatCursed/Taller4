@@ -1,4 +1,4 @@
-package Logica;
+package Dominio;
 
 public class Coordinador extends Usuario {
 	private String area;

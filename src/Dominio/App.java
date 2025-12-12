@@ -1,14 +1,21 @@
-package Logica;
+/*
+David Rodríguez Sebastían Guevara
+21.806.579-1
+ICCI
+*/
+
+package Dominio;
 
 import java.util.Scanner;
 
 import javax.swing.SwingUtilities;
 
-import GUI.GUI;
+import Logica.SistemaImpl;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import Singleton.SistemaImpl;
+
+import presentacion.GUI;
 
 public class App {
 	private static Scanner s;

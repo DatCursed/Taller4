@@ -1,4 +1,4 @@
-package Logica;
+package Dominio;
 
 public abstract class Usuario {
 	protected String username, contraseña, rol;

@@ -1,4 +1,4 @@
-package GUI;
+package presentacion;
 
 import java.awt.GridLayout;
 
@@ -10,12 +10,12 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import Logica.Administrador;
-import Logica.Coordinador;
-import Logica.Estudiante;
-import Logica.Sistema;
-import Logica.Usuario;
-import Singleton.SistemaImpl;
+import Dominio.Administrador;
+import Dominio.Coordinador;
+import Dominio.Estudiante;
+import Dominio.Sistema;
+import Dominio.Usuario;
+import Logica.SistemaImpl;
 
 public class GUIAdmin extends JFrame {
 	private Administrador admin;

@@ -1,4 +1,10 @@
-package Logica;
+/*
+David Rodríguez Sebastían Guevara
+21.806.579-1
+ICCI
+*/
+
+package Dominio;
 
 public interface Sistema {
 

@@ -1,15 +1,20 @@
-package Singleton;
+/*
+David Rodríguez Sebastían Guevara
+21.806.579-1
+ICCI
+*/
+
+package Logica;
 
 import java.util.ArrayList;
 
-import Factory.UsuariosFactory;
-import Logica.Certificacion;
-import Logica.Curso;
-import Logica.Estudiante;
-import Logica.Nota;
-import Logica.RegistroCertificacion;
-import Logica.Sistema;
-import Logica.Usuario;
+import Dominio.Certificacion;
+import Dominio.Curso;
+import Dominio.Estudiante;
+import Dominio.Nota;
+import Dominio.RegistroCertificacion;
+import Dominio.Sistema;
+import Dominio.Usuario;
 
 public class SistemaImpl implements Sistema {
 	private static Sistema instance;

@@ -1,4 +1,4 @@
-package Logica;
+package Dominio;
 
 public class RegistroCertificacion {
 	private Certificacion certificacion;
