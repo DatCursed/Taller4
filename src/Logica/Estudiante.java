@@ -6,8 +6,8 @@ public class Estudiante extends Usuario {
 	private String rut, nombre, carrera;
 	private int semestre;
 	private String correo;
-	private ArrayList<Curso> asignaturasCursadas;
-	private ArrayList<Certificacion> certificaciones;
+	private ArrayList<Nota> notas;
+	private ArrayList<RegistroCertificacion> certificaciones;
 	
 	public Estudiante(String username, String contraseña, String rol, String rut, String nombre, String carrera,
 			int semestre, String correo) {
@@ -17,10 +17,9 @@ public class Estudiante extends Usuario {
 		this.carrera = carrera;
 		this.semestre = semestre;
 		this.correo = correo;
-		this.asignaturasCursadas = new ArrayList<>();
+		this.notas = new ArrayList<>();
 		this.certificaciones = new ArrayList<>();
 	}
-
 
 	public String getRut() {
 		return rut;
@@ -42,15 +41,21 @@ public class Estudiante extends Usuario {
 		return correo;
 	}
 
-	public ArrayList<Curso> getAsignaturasCursadas() {
-		return asignaturasCursadas;
+	public ArrayList<Nota> getNotas() {
+		return notas;
 	}
 
-	public ArrayList<Certificacion> getCertificaciones() {
+	public ArrayList<RegistroCertificacion> getCertificaciones() {
 		return certificaciones;
 	}
 	
+	public void addRegistro(RegistroCertificacion certificacion) {
+		certificaciones.add(certificacion);
+	}
 	
+	public void addNota(Nota nota) {
+		notas.add(nota);
+	}
 	
 	
 	
