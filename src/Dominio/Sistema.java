@@ -30,5 +30,7 @@ public interface Sistema {
 
 	boolean restablecerContraseña(String username, String contraseñaNueva);
 
+	double calcularPromedio(Estudiante estudiante);
+
 
 }

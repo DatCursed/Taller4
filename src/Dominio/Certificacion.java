@@ -2,6 +2,8 @@ package Dominio;
 
 import java.util.ArrayList;
 
+import Logica.Visitor;
+
 public class Certificacion {
 	private String id;
 	private String nombre;
@@ -45,6 +47,10 @@ public class Certificacion {
 
 	public void addCursoCertificado(Curso c) {
 		cursosCertificados.add(c);
+	}
+	
+	public void accept(Visitor v) {
+		v.visit(this);
 	}
 	
 }

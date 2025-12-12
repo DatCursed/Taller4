@@ -197,4 +197,27 @@ public class SistemaImpl implements Sistema {
 		return false;
 	}
 
+	@Override
+	public double calcularPromedio(Estudiante estudiante) {
+		if (estudiante.getNotas() == null || estudiante.getNotas().isEmpty()) {
+			return 0.0;
+		}
+		
+		double suma = 0;
+		int contador = 0;
+		
+		for (Nota n: estudiante.getNotas()) {
+			if (!n.getEstado().equalsIgnoreCase("cursando")) {
+				suma += n.getCalificacion();
+				contador++;
+			}
+		}
+		
+		if (contador > 0) {
+			return suma / contador;
+		} else {
+			return 0.0;
+		}
+	}
+
 }
