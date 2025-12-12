@@ -56,6 +56,26 @@ public class Estudiante extends Usuario {
 	public void addNota(Nota nota) {
 		notas.add(nota);
 	}
+
+	public void setRut(String rut) {
+		this.rut = rut;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setCarrera(String carrera) {
+		this.carrera = carrera;
+	}
+
+	public void setSemestre(int semestre) {
+		this.semestre = semestre;
+	}
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
 	
 	
 	

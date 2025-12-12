@@ -16,4 +16,13 @@ public interface Sistema {
 
 	Usuario login(String usuario, String contraseña);
 
+	void crearUsuario(Usuario u);
+
+	Usuario buscarUsuario(String username);
+
+	boolean eliminarUsuario(String username);
+
+	boolean restablecerContraseña(String username, String contraseñaNueva);
+
+
 }

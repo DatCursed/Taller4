@@ -147,5 +147,49 @@ public class SistemaImpl implements Sistema {
 		}
 		return null;
 	}
+	
+	@Override
+	public void crearUsuario(Usuario u) {
+		usuarios.add(u);
+		
+		if (u.getRol().equalsIgnoreCase("Estudiante")) {
+			estudiantes.add((Estudiante) u);
+		}
+	}
+	
+	@Override
+	public boolean eliminarUsuario(String username) {
+		Usuario u = buscarUsuario(username);
+		
+		if (u != null) {
+			if (u.getRol().equalsIgnoreCase("Estudiante")) {
+				estudiantes.remove(u);
+			}
+			usuarios.remove(u);
+			return true;
+		}
+		return false;
+	}
+	
+	
+	
+	public Usuario buscarUsuario(String username) {
+		for (Usuario u: usuarios) {
+			if (u.getUsername().equalsIgnoreCase(username)) {
+				return u;
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public boolean restablecerContraseña(String username, String contraseñaNueva) {
+		Usuario u = buscarUsuario(username);
+		if (u != null) {
+			u.setContraseña(contraseñaNueva);
+			return true;
+		}
+		return false;
+	}
 
 }

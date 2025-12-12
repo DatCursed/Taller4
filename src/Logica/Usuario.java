@@ -20,6 +20,15 @@ public abstract class Usuario {
 	public String getRol() {
 		return rol;
 	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public void setContraseña(String contraseña) {
+		this.contraseña = contraseña;
+	}
+	
 	
 	
 }

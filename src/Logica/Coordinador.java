@@ -11,6 +11,11 @@ public class Coordinador extends Usuario {
 	public String getArea() {
 		return area;
 	}
+
+	public void setArea(String area) {
+		this.area = area;
+	}
+	
 	
 	
 }
