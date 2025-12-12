@@ -1,6 +1,11 @@
 package Logica;
 
 import java.util.Scanner;
+
+import javax.swing.SwingUtilities;
+
+import GUI.GUI;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import Singleton.SistemaImpl;
@@ -11,6 +16,13 @@ public class App {
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		leerArchivos();
+		SwingUtilities.invokeLater(new Runnable() {
+			@Override
+			public void run() {
+				GUI gui = new GUI();
+				gui.setVisible(true);
+			}
+		});
 	}
 
 	private static void leerArchivos() throws FileNotFoundException {

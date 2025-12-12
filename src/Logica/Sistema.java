@@ -14,4 +14,6 @@ public interface Sistema {
 
 	void buildRegistros(String[] parts);
 
+	Usuario login(String usuario, String contraseña);
+
 }

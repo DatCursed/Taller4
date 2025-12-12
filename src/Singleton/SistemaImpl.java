@@ -34,7 +34,7 @@ public class SistemaImpl implements Sistema {
 		UsuariosFactory factory = new UsuariosFactory();
 		Usuario u = factory.buildUsuarios(parts);
 		
-		if (u.getUsername().equalsIgnoreCase("estudiante")) {
+		if (u.getRol().equalsIgnoreCase("estudiante")) {
 			estudiantes.add((Estudiante) u);
 		}
 		usuarios.add(u);
@@ -136,6 +136,16 @@ public class SistemaImpl implements Sistema {
 			RegistroCertificacion registro = new RegistroCertificacion(certificacionEncontrada, fecha, estado, progreso);
 			estudianteEncontrado.addRegistro(registro);
 		}
+	}
+
+	@Override
+	public Usuario login(String usuario, String contraseña) {
+		for (Usuario u: usuarios) {
+			if (u.getUsername().equalsIgnoreCase(usuario) && u.getContraseña().equalsIgnoreCase(contraseña)) {
+				return u;
+			}
+		}
+		return null;
 	}
 
 }
